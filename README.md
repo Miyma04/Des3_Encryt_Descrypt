@@ -42,6 +42,7 @@ java --module-path (расположение JavaFX)\Javafx\javafx-sdk-21.0.6\li
 1) Ошибка: "JavaFX runtime components are missing"
 
 Решение: Убедитесь, что --module-path указан правильно и содержит путь к JavaFX lib.
+
 2) Ошибка: "Could not find or load main class com.encryptiontool.MainApp"
 
 Решение: Убедитесь, что код скомпилирован:
