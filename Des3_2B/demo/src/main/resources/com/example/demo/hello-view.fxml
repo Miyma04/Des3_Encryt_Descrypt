@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.encryptiontool.Controller">
+
+  <Label text="Выберите файл:"/>
+  <Button text="Выбрать файл" onAction="#chooseFile"/>
+  <Label fx:id="fileLabel" text="Файл не выбран"/>
+
+  <Label text="Выберите режим:"/>
+  <ToggleGroup fx:id="modeToggle">
+    <RadioButton text="Шифрование" fx:id="encryptMode" selected="true"/>
+    <RadioButton text="Дешифрование" fx:id="decryptMode"/>
+  </ToggleGroup>
+
+  <Button text="Запустить" onAction="#processFile"/>
+  <Label fx:id="statusLabel" text="Ожидание операции..." style="-fx-text-fill: gray;"/>
+</VBox>
